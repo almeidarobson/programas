@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 void soma();
+void subtrair();
 
 int main() {
 
@@ -9,6 +10,7 @@ int main() {
 	do {
 		printf("Escolha o exercício:\n"
 				"1 - Soma de dois numeros\n"
+				"2 - Subtração dedois numeros\n"
 				"100 - sair\n"
 
 				"> ");
@@ -19,6 +21,9 @@ int main() {
 			case 1:
 				soma();
 				break;
+			case 2:
+				subtrair();
+				break;
 			default:
 				continue; 
 		}
@@ -26,6 +31,17 @@ int main() {
 
 	return 0;
 }
+
+void subtrair() {
+	double a, b;
+	printf("Subtraçao de dois números:\nDigite dois numero a serem subtraídos\n> ");
+	scanf("%lf %lf", &a, &b);
+
+	double sub = a - b;
+	printf("Total = %lf\n", sub);
+	return;
+}
+
 
 
 void soma() {
