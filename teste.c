@@ -32,6 +32,16 @@ int main() {
 	return 0;
 }
 
+void soma() {
+	double a, b;
+	printf("Soma de dois números:\nDigite dois numero a serem somados\n> ");
+	scanf("%lf %lf", &a, &b);
+
+	double sum = a + b;
+	printf("Total = %lf\n", sum);
+	return;
+}
+
 void subtrair() {
 	double a, b;
 	printf("Subtraçao de dois números:\nDigite dois numero a serem subtraídos\n> ");
@@ -42,14 +52,3 @@ void subtrair() {
 	return;
 }
 
-
-
-void soma() {
-	double a, b;
-	printf("Soma de dois números:\nDigite dois numero a serem somados\n> ");
-	scanf("%lf %lf", &a, &b);
-
-	double sum = a + b;
-	printf("Total = %lf\n", sum);
-	return;
-}
